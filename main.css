@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.poster1{
+    float: left;
+}
+.poster2{
+    float: left;
+}
+.poster3{
+    float: left;
+}
+.poster4{
+    float: left;
+}
+/* 포스터1 */
+.ticket-link {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.ticket-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ticket-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticket-rank {
+  font-size: 70px;
+  color: #ffff;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+.ticket-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 70%, rgb(36, 36, 36));
+}
+
+.ticket-info {
+  padding: 20px 10px;
+}
+.ticket-info-list li {
+  margin-bottom: 5px;
+}
+.ticket-title {
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700px;
+  /* background-color: burlywood; */
+  display: inline-block;
+  height: 40px;
+}
+.ticket-hall {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+.ticket-date {
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+.ticket-sale {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e44;
+
+  padding: 4px 8px;
+}
+
+/* 포스터2 */
